@@ -1,8 +1,8 @@
-#JNTUK-Instant Website Repository
+# JNTUK-Instant Website Repository
 
 - Contains Study-Materials for B.E./B.Tech for JNTU-Kakinada affliated Colleges
 
-### Getting Started with [Create React App](https://create-react-app.dev/)
+## Getting Started with [Create React App](https://create-react-app.dev/)
 
 In the project directory, you can run:
 
