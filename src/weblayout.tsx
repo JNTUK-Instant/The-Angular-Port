@@ -1,5 +1,5 @@
 import React from "react";
-import "./weblayout.css";
+import "./styles/weblayout.css";
 
 function Layout() {
   return (
