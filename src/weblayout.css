@@ -1,0 +1,141 @@
+/*-------------------------------------------------------------*/
+header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 725px) {
+  .page_content {
+    margin: 0 2px;
+    padding: 8px;
+  }
+  header {
+    height: 410px;
+  }
+}
+/*---------------------------------------------------*/
+.header_floats {
+  width: 49.3%;
+  height: 200px;
+  background-color: hsla(48, 100%, 93%, 1);
+}
+
+@media screen and (max-width: 725px) {
+  .header_floats {
+    width: 100%;
+  }
+}
+
+.logo_block {
+  border-radius: 30px 0 0 0;
+  user-select: none;
+  padding: 0;
+}
+@media screen and (max-width: 725px) {
+  .logo_block {
+    border-radius: 32px 32px 0 0;
+    margin-right: 0;
+  }
+}
+
+.top-logo_block {
+  height: 150px;
+  padding: 12px 5px 0;
+}
+
+.top-logo_block h1 {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Nanum Myeongjo", serif;
+  background-color: crimson;
+  color: hsla(48, 100%, 93%, 1);
+  padding: 5px;
+}
+#heading1 {
+  margin: 0 auto 0;
+  width: 160px;
+}
+#heading2 {
+  margin: 0px auto;
+  width: 300px;
+  box-shadow: 0 0 20px black;
+  animation: skewdown 0.2s ease-in 2s forwards;
+}
+@keyframes skewdown {
+  from {
+    margin: 0px auto;
+  }
+  to {
+    transform: rotate(-7deg) skewX(-7deg);
+    margin: 10px auto;
+  }
+}
+
+.bottom-logo_block {
+  height: 40px;
+  padding: 0 5px 0;
+  border-top: 1px solid black;
+}
+.bottom-logo_block p {
+  margin: 6px;
+  font-size: 12px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/*-------------------------------------------------*/
+.info_block {
+  border-radius: 0 30px 0 0;
+}
+@media screen and (max-width: 725px) {
+  .info_block {
+    margin-left: 0;
+    margin-top: 10px;
+    border-radius: 0;
+  }
+}
+.top-info_block {
+  box-sizing: border-box;
+  height: 160px;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  font-family: "Segoe UI";
+}
+
+.bottom-info_block {
+  height: 40px;
+  width: 100%;
+}
+.bottom-info_block ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.bottom-info_block li {
+  width: 100%;
+  height: 40px;
+  clear: none;
+  flex: 1;
+}
+.nav_btns {
+  display: block;
+  height: 20px;
+  padding: 10px 0px;
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI";
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+.nav_btns:hover {
+  color: red;
+  background-color: hsla(48, 100%, 93%, 1);
+}
