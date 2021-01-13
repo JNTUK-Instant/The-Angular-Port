@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/index.css";
-//import App from "./App";
-import Layout from "./weblayout";
+import Header1 from "./header";
+import Content0 from "./content";
 //import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Layout />
+    <Header1 />
+    <hr className="hr_line" />
+    <Content0 />
   </React.StrictMode>,
   document.getElementById("root")
 );

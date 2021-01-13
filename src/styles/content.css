@@ -1,0 +1,6 @@
+main {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: hsla(48, 100%, 93%, 1);
+  padding: 12px 0;
+}

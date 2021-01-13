@@ -1,7 +1,7 @@
-import React from "react";
-import "./styles/weblayout.css";
+//import React from "react";
+import "./styles/header.css";
 
-function Layout() {
+function Header1() {
   return (
     <header>
       <div className="logo_block header_floats">
@@ -50,4 +50,4 @@ function Layout() {
   );
 }
 
-export default Layout;
+export default Header1;
