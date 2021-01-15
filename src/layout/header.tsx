@@ -1,5 +1,5 @@
 //import React from "react";
-import "./styles/header.css";
+import "./header.css";
 
 function Header1() {
   return (
@@ -34,12 +34,12 @@ function Header1() {
               </a>
             </li>
             <li>
-              <a id="about" className="nav_btns" href="about.html">
+              <a id="about" className="nav_btns" href="/about.html">
                 About
               </a>
             </li>
             <li>
-              <a id="contribute" className="nav_btns" href="contribute.html">
+              <a id="contribute" className="nav_btns" href="/contribute.html">
                 Contribute
               </a>
             </li>
