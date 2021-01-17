@@ -33,7 +33,7 @@ function HeadBar() {
             </div>
           </div>
         </div>
-        <BrowserRouter forceRefresh={true} basename="/The-React-Port">
+        <BrowserRouter forceRefresh={true} basename={process.env.PUBLIC_URL + "/"}>
           <div className="bottom-info_block">
             <ul>
               <li>
@@ -67,12 +67,12 @@ class Content0 extends React.Component {
 
 function Cont() {
   return (
-    <BrowserRouter forceRefresh={true} basename="/The-React-Port">
+    <BrowserRouter forceRefresh={true} basename={process.env.PUBLIC_URL + "/"}>
       <Switch>
         <Route exact path="/">
           <Main0 />
         </Route>
-        <Route exact path="/about">
+        <Route path="/about">
           <About />
         </Route>
       </Switch>
