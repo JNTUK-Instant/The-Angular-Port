@@ -33,7 +33,7 @@ function HeadBar() {
             </div>
           </div>
         </div>
-        <BrowserRouter>
+        <BrowserRouter forceRefresh={true} basename="/The-React-Port">
           <div className="bottom-info_block">
             <ul>
               <li>
@@ -42,12 +42,12 @@ function HeadBar() {
                 </Link>
               </li>
               <li>
-                <Link className="nav_btns" to="/about.html">
+                <Link className="nav_btns" to="/about">
                   About
                 </Link>
               </li>
               <li>
-                <Link className="nav_btns" to="/contribute.html">
+                <Link className="nav_btns" to="/contribute">
                   Contribute
                 </Link>
               </li>
@@ -67,12 +67,12 @@ class Content0 extends React.Component {
 
 function Cont() {
   return (
-    <BrowserRouter>
+    <BrowserRouter forceRefresh={true} basename="/The-React-Port">
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Main0 />
         </Route>
-        <Route path="/about.html">
+        <Route exact path="/about">
           <About />
         </Route>
       </Switch>
@@ -80,6 +80,7 @@ function Cont() {
   );
 }
 
+/*
 class PageTemplate extends React.Component {
   render() {
     return (
@@ -90,6 +91,17 @@ class PageTemplate extends React.Component {
       </>
     );
   }
+}
+*/
+
+function PageTemplate() {
+  return (
+    <>
+      <HeadBar />
+      <hr className="hr_line" />
+      <Content0 children={<Cont />} />
+    </>
+  );
 }
 
 export default PageTemplate;
