@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./styles/index.css";
-import Header1 from "./layout/header";
-import Content0 from "./layout/content";
+import PageTemplate from './template'
+//import Header1 from "./layout/header";
+//import Content0 from "./layout/content";
 //import reportWebVitals from './reportWebVitals';
+//import FullPage from './fullPage'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header1 />
-    <hr className="hr_line" />
-    <Content0/>
+    <PageTemplate />
   </React.StrictMode>,
   document.getElementById("root")
 );
