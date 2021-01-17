@@ -1,6 +1,7 @@
 {
   "short_name": "JNTUK Instant",
   "name": "JNTUK Instant Notes",
+  "description": "A website for Study-Materials for B.E./B.Tech students of JNTU-Kakinada affliated Colleges",
   "icons": [
     {
       "src": "favicon.ico",
