@@ -1,4 +1,5 @@
 import "../styles/header.css";
+import CarouselDiv from "./divCarousel";
 
 function HeadBar() {
   return (
@@ -16,13 +17,7 @@ function HeadBar() {
       <div className="info_block header_floats">
         <div className="top-info_block">
           <div className="carousel-container">
-            <div id="carousel">
-              <div>
-                <p>Welcome</p>
-                <p>To</p>
-                <p>JNTUK-Instant!</p>
-              </div>
-            </div>
+            <CarouselDiv />
           </div>
         </div>
         <div className="bottom-info_block">
