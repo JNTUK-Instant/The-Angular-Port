@@ -60,7 +60,7 @@ header {
   margin: 0px auto;
   width: 300px;
   box-shadow: 0 0 20px black;
-  /*animation: skewdown 0.2s ease-in 2s forwards;*/
+  animation: skewdown 0.2s ease-in 2s forwards;
 }
 @keyframes skewdown {
   from {
