@@ -1,4 +1,3 @@
-import React from "react";
 import Carousel from "../lib/carousel";
 
 function D1() {
@@ -27,14 +26,13 @@ function D3() {
     <div>
       <p>This Website is</p>
       <p>still in</p>
-      <p>Beta</p>
+      <p>Beta!!!!</p>
     </div>
   );
 }
 
 let TheDivs = [<D1 />, <D2 />, <D3 />];
-function CarouselDiv() {
+
+export default function CarouselDiv() {
   return <Carousel carDiv={TheDivs} />;
 }
-
-export default CarouselDiv;

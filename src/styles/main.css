@@ -1,0 +1,10 @@
+main {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: hsla(48, 100%, 93%, 1);
+  min-height: 60vh;
+  display: grid;
+  grid-template-areas: "navbar content";
+  grid-template-columns: minmax(200px, 25%) auto;
+  column-gap: 15px;
+}
