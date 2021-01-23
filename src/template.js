@@ -1,4 +1,3 @@
-import "./styles/main.css";
 import "./styles/index.css";
 import React from "react";
 

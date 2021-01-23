@@ -1,22 +1,20 @@
 import React from "react";
 
-let i = 0;
 class Carousel extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      currentChild: this.props.carDiv[0],
-    };
+    this.state = { i: 0 };
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.wait(), 4000);
+    this.timerID = setInterval(() => this.wait(), 2000);
   }
 
   wait() {
-    let x = this.props.carDiv;
-    i = i === x.length - 1 ? 0 : i + 1;
-    this.setState({ currentChild: this.props.carDiv[i] });
+    let { i } = this.state;
+    let len = this.props.carDiv.length - 2;
+    let new_i = i > len ? 0 : i + 1;
+    this.setState({ i: new_i });
   }
 
   componentWillUnmount() {
@@ -24,7 +22,8 @@ class Carousel extends React.Component {
   }
 
   render() {
-    return <>{this.state.currentChild}</>;
+    let { i } = this.state;
+    return <>{this.props.carDiv[i]}</>;
   }
 }
 
