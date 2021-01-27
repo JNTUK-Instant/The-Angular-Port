@@ -1,10 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PageTemplate from './template'
-//import Header1 from "./layout/header";
-//import Content0 from "./layout/content";
-//import reportWebVitals from './reportWebVitals';
-//import FullPage from './fullPage'
+import "./styles/index.css";
+import { HeadBar, Footer, Main0 } from "./components/_exports";
+
+class Content0 extends React.Component {
+  render() {
+    return <main>{this.props.children}</main>;
+  }
+}
+
+class PageTemplate extends React.Component {
+  render() {
+    return (
+      <>
+        <HeadBar />
+        <hr className="hr_line" />
+        <Content0 children={<Main0 />} />
+        <hr className="hr_line" />
+        <Footer />
+      </>
+    );
+  }
+}
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,7 +30,16 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-//reportWebVitals();
+
+var disqus_config = function () {
+  this.page.url = "https://jntuk-instant.github.io/The-React-Port/";
+  this.page.identifier = "123456789";
+};
+
+(function () {
+  var d = document,
+    s = d.createElement("script");
+  s.src = "https://https-jntuk-instant-github-io.disqus.com/embed.js";
+  s.setAttribute("data-timestamp", +new Date());
+  (d.head || d.body).appendChild(s);
+})();

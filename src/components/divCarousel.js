@@ -5,7 +5,7 @@ function D1() {
     <div>
       <p>Welcome</p>
       <p>To</p>
-      <p>JNTUK-Instant!</p>
+      <h3>JNTUK-Instant!</h3>
     </div>
   );
 }
@@ -14,9 +14,7 @@ function D2() {
   return (
     <div>
       <p>This Site is Open-Source</p>
-      <p>
-        Contribute through <a href="https://github.com/JNTUK-Instant">GitHub</a>
-      </p>
+      <p>Contribute through <a href="https://github.com/JNTUK-Instant">GitHub</a></p>
     </div>
   );
 }

@@ -23,9 +23,9 @@ class Carousel extends React.Component {
 
   render() {
     let { i } = this.state;
-    return <>{this.props.carDiv[i]}</>;
+    let { carDiv } = this.props;
+    return <>{carDiv[i]}</>;
   }
 }
 
 export default Carousel;
-//learning
