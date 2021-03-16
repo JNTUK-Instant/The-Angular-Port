@@ -1,13 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/index.css";
-import { HeadBar, Footer, Main0 } from "./components/_exports";
-
-class Content0 extends React.Component {
-  render() {
-    return <main>{this.props.children}</main>;
-  }
-}
+import { HeadBar, Footer, Main0 } from "./components/";
 
 class PageTemplate extends React.Component {
   render() {
@@ -15,7 +9,7 @@ class PageTemplate extends React.Component {
       <>
         <HeadBar />
         <hr className="hr_line" />
-        <Content0 children={<Main0 />} />
+        <Main0 />
         <hr className="hr_line" />
         <Footer />
       </>
@@ -29,7 +23,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-
 
 var disqus_config = function () {
   this.page.url = "https://jntuk-instant.github.io/The-React-Port/";

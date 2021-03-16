@@ -1,6 +1,6 @@
 {
   "name": "jntuk-instant",
-  "version": "2.0.0-alpha-7.4",
+  "version": "2.0.0-alpha-7.5",
   "private": true,
   "homepage": "https://jntuk-instant.github.io/The-React-Port/",
   "dependencies": {
@@ -16,11 +16,12 @@
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": ["react-app"]
+    "extends": [
+      "react-app"
+    ]
   },
   "browserslist": {
     "production": [
@@ -35,6 +36,6 @@
     ]
   },
   "prettier": {
-    "printWidth": 250
+    "printWidth": 180
   }
 }
